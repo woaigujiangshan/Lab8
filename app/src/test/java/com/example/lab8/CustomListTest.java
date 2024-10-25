@@ -47,5 +47,13 @@ public class CustomListTest {
         assertEquals(false, list.hasCity(city));
     }
 
+    @Test
+    public void countCitiesTest(){
+        list = MockCityList();
+        assertEquals(0, list.getCount());
+        list.addCity(new City("Estevan", "SK"));
+        assertEquals(1, list.getCount());
+    }
+
 
 }
